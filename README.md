@@ -6,47 +6,65 @@ Group Members:
 - Mathew Saji Varkey
 - Nijin Sino
 - Abin Biju
+- Burak Alay
 
 Project Description:
-This project is a Discord app built using Node.js and the Discord.js library.
-The app connects to a Discord server and responds to user commands. It was
-developed to demonstrate the fundamentals of creating interactive Discord apps.
+This project is a Discord application built using Node.js and the Discord.js library.  
+The goal of the assignment was to design a functional Discord bot that responds to user messages in a server.  
+The bot recognizes specific commands and provides helpful responses.  
+This project demonstrates the fundamentals of building event-driven applications, working with APIs, and using JavaScript packages.
+
+Key Features of the Discord App:
+- Responds to user commands in a Discord server
+- Includes multiple commands located inside a "commands" folder
+- Uses modular command files for scalability
+- Uses Node.js and Discord.js to connect the bot to the Discord API
+- Includes a secure configuration file (example provided) to keep the bot token private
 
 How to Run the App (Step-by-Step):
-1. Clone the GitHub repository to your computer.
-2. Open the project folder and go into the folder named “groupAssignment”.
-3. Open a terminal inside this folder.
-4. Install all required dependencies by running:
+1. Clone this GitHub repository to your computer.
+2. Open the project folder in Visual Studio Code or any IDE.
+3. Open a terminal inside the project folder.
+4. Install all dependencies by running:
    npm install
-5. Create a file called config.json in the same folder and add the Discord token in this format:
+5. Create a new file called `config.json` in the project folder and add the bot token in this format:
    {
-     "token": "YOUR_DISCORD_APP_TOKEN"
+     "token": "YOUR_DISCORD_BOT_TOKEN"
    }
 6. Save the file.
-7. Start the app by running:
+7. Start the bot by running:
    node index.js
-8. Make sure the app has already been added to a Discord server before testing.
+8. Make sure the bot has already been added to a Discord server that you can test in.
 
 Commands Available for Testing:
-!hello — Responds with a greeting  
-!help  — Displays available commands  
-!ping  — Responds with latency information
+!hello   → Bot replies with a greeting  
+!help    → Lists the available commands  
+!ping    → Shows response speed / latency  
 
-Files in the Project:
-index.js — Main app logic  
-package.json — Dependencies and metadata  
-config.json — Stores Discord token locally (not uploaded for security)
+Project Files:
+index.js       – Main application logic and bot login  
+package.json   – Dependencies and metadata  
+package-lock.json – Required only for dependency tracking  
+commands/      – Folder containing separate command files  
+config.json    – Stores the bot token locally (not uploaded for security)  
+config.json.example – Template file showing where the token must be inserted  
 
-Contributions / Roles:
-Justin Logue — Core Discord app development and command features  
-Mathew Saji Varkey — GitHub setup, README documentation, and deployment support  
-Nijin Sino — Testing and feedback during development  
-Abin Biju — Testing and group coordination
+Security Notes:
+The bot token is **not** included in the GitHub repository.  
+A sample file (`config.json.example`) is included so anyone running the bot can supply their own token.  
+Uploading the real token would make the bot public and unsafe.
 
-Notes:
-The config.json file is intentionally excluded from the repository to protect
-the Discord token. If a token is exposed publicly, it must be reset in the
-Discord Developer Portal.
+Contributions of Each Group Member:
+- Justin Logue — Set up the base project, organized repository, and managed deployment.
+- Mathew Saji Varkey — Wrote README documentation and assisted with structure and commands.
+- Nijin Sino — Contributed to command functionality and testing.
+- Abin Biju — Helped with debugging and running the app in the server.
+- Burak Alay — Assisted in development and command interaction testing.
 
-Course Information:
-This project is submitted for the COMP2068 JavaScript Frameworks course at Georgian College.
+Future Improvements (Optional ideas):
+- Add more interactive commands
+- Add slash commands application-wide
+- Host the bot permanently using Render or another cloud service
+- Create a web dashboard to control bot settings
+
+End of README

@@ -1,0 +1,8 @@
+45-Minute Lesson Plan for Discord.js Bot
+
+0–5 min  : Introduction to Discord bots and APIs
+5–15 min : Installing Node.js and Discord.js
+15–25 min: Explaining project structure (index.js, commands folder)
+25–35 min: Live demo of commands (!hello, !help, !ping)
+35–40 min: Running the bot and testing in Discord server
+40–45 min: Q&A and feedback discussion
